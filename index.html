@@ -11,20 +11,17 @@
       --muted: #6d6a66;
       --accent: #8d5f4f;
       --line: #ddd6cc;
-      --card: #fffdf9;
-      --max: 980px;
+      --max: 900px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      color: var(--text);
       background: var(--bg);
-      line-height: 1.7;
+      color: var(--text);
+      line-height: 1.75;
     }
 
     a {
@@ -36,91 +33,78 @@
       text-decoration: underline;
     }
 
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
     header {
-      padding: 4rem 1.5rem 3rem;
+      padding: 4rem 0 2.5rem;
       border-bottom: 1px solid var(--line);
       background: linear-gradient(to bottom, #fbf8f3, #f7f4ef);
     }
 
-    .container {
-      max-width: var(--max);
-      margin: 0 auto;
-    }
-
     nav {
-      display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
       margin-bottom: 2rem;
       font-size: 0.98rem;
     }
 
+    nav a {
+      margin-right: 1.25rem;
+    }
+
     h1 {
       font-size: 2.6rem;
-      margin: 0 0 1rem;
       line-height: 1.15;
-      max-width: 800px;
+      margin: 0 0 1rem;
     }
 
     .subtitle {
-      max-width: 760px;
       color: var(--muted);
+      max-width: 760px;
       font-size: 1.08rem;
     }
 
     main {
-      padding: 3rem 1.5rem 4rem;
+      padding: 3rem 0 4rem;
     }
 
     section {
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--line);
     }
 
     h2 {
-      font-size: 1.55rem;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 0.5rem;
+      font-size: 1.4rem;
+      margin: 0 0 1rem;
     }
 
     p {
-      margin: 0 0 1.2rem;
+      margin: 0 0 1.1rem;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1rem;
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.5rem 0 0;
     }
 
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 1.25rem;
-    }
-
-    .card h3 {
-      margin-top: 0;
-      margin-bottom: 0.6rem;
-      font-size: 1.1rem;
-    }
-
-    .small {
-      color: var(--muted);
-      font-size: 0.95rem;
+    li {
+      margin-bottom: 0.7rem;
     }
 
     footer {
-      border-top: 1px solid var(--line);
-      padding: 2rem 1.5rem 3rem;
+      padding: 2rem 0 3rem;
       color: var(--muted);
       font-size: 0.95rem;
     }
 
     @media (max-width: 700px) {
-      h1 {
-        font-size: 2rem;
+      h1 { font-size: 2rem; }
+      nav a {
+        display: inline-block;
+        margin-bottom: 0.5rem;
       }
     }
   </style>
@@ -130,7 +114,9 @@
     <div class="container">
       <nav>
         <a href="index.html">About</a>
-        <a href="events.html">Events</a>
+        <a href="events.html">Workshop Series</a>
+        <a href="people.html">People</a>
+        <a href="references.html">References</a>
       </nav>
 
       <h1>Female Scholars in Conflict Studies</h1>
@@ -156,44 +142,19 @@
       </section>
 
       <section>
-        <h2>Core Themes</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Methodological Reflection</h3>
-            <p>
-              The initiative creates space for critical discussion of fieldwork methods, access, ethics, and the practical realities of conducting research in difficult settings.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Community Building</h3>
-            <p>
-              It seeks to foster a supportive intellectual community in which scholars feel able to exchange experiences, concerns, and reflections openly.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Transferable Skills</h3>
-            <p>
-              The project highlights forms of practical knowledge that may be useful to other researchers, especially early-career scholars working in sensitive environments.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Project Lead</h2>
-        <p>
-          The initiative is led by Dr Xu Peng.
-        </p>
+        <h2>Key Themes</h2>
+        <ul>
+          <li>Methodological reflection on fieldwork, access, ethics, and research practice in difficult settings.</li>
+          <li>Community-building among scholars working on conflict and politically sensitive contexts.</li>
+          <li>The sharing of transferable skills, practical strategies, and forms of mutual support for early-career researchers.</li>
+        </ul>
       </section>
     </div>
   </main>
 
   <footer>
     <div class="container">
-      <p>Female Scholars in Conflict Studies</p>
-      <p class="small">Supported by SOAS Research Culture funding</p>
+      <p>Contact: <a href="mailto:xu.peng@manchester.ac.uk">xu.peng@manchester.ac.uk</a></p>
     </div>
   </footer>
 </body>
